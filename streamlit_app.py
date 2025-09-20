@@ -38,7 +38,7 @@ def load_model_data():
         indices = pd.Series(df.index, index=df['title']).drop_duplicates()
         return sparse_sim_dict, df, indices
     except Exception as e:
-        st.error(f"Error al cargar los archivos: {e}")
+        st.error(f"Error al cargar los archivos: {type(e).__name__} - {e}")
         return None, None, None
 
 sparse_sim_dict, df, indices = load_model_data()
@@ -106,5 +106,6 @@ st.sidebar.markdown("""
     modelo los libros con características similares para
     ofrecerte sugerencias.
 """)
+
 
 
