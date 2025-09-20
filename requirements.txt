@@ -4,9 +4,8 @@ streamlit==1.35.0
 
 pandas
 
-joblib
-opencv-python-headless
-ultralytics==8.3.199
+
+
 
 
 
