@@ -5,7 +5,8 @@ import joblib
 import pandas as pd
 import os
 
-
+st.sidebar.subheader("📁 Archivos en el directorio actual:")
+st.sidebar.write(os.listdir("."))
 
 joblib.load("book_recommender_model.joblib")
 joblib.load("book_data.joblib")
@@ -105,4 +106,5 @@ st.sidebar.markdown("""
     modelo los libros con características similares para
     ofrecerte sugerencias.
 """)
+
 
