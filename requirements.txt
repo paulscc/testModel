@@ -1,14 +1,13 @@
 # Requirements para la aplicación simple de OpenCV
 
 streamlit==1.35.0
-streamlit-webrtc
-requests
-tensorflow
+
 pandas
-scikit-learn
+
 joblib
 opencv-python-headless
 ultralytics==8.3.199
+
 
 
 
