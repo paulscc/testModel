@@ -5,6 +5,12 @@ import joblib
 import pandas as pd
 import os
 
+
+
+joblib.load("book_recommender_model.joblib")
+joblib.load("book_data.joblib")
+
+
 # --- Título y descripción de la aplicación ---
 st.title("📚 Sistema de Recomendación de Libros")
 st.markdown("Ingresa un título de libro para obtener recomendaciones basadas en su contenido.")
@@ -99,3 +105,4 @@ st.sidebar.markdown("""
     modelo los libros con características similares para
     ofrecerte sugerencias.
 """)
+
